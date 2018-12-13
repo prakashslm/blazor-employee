@@ -42,7 +42,7 @@ namespace BlazorCrud.Server.Controllers
     }
 
     [HttpDelete]
-    [Route("{id}")]
+    [Route("api/employee/delete/{id}")]
     public void Delete(int id)
     {
       objemployee.DeleteEmployee(id);

@@ -3,15 +3,15 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace BlazorCrud.Client
 {
-    public class Startup
+  public class Startup
+  {
+    public void ConfigureServices(IServiceCollection services)
     {
-        public void ConfigureServices(IServiceCollection services)
-        {
-        }
-
-        public void Configure(IBlazorApplicationBuilder app)
-        {
-            app.AddComponent<App>("app");
-        }
     }
+
+    public void Configure(IBlazorApplicationBuilder app)
+    {
+      app.AddComponent<App>("app");
+    }
+  }
 }

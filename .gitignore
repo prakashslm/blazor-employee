@@ -3,10 +3,8 @@
 
 # App Level
 dist/
-e-tractstar.js
 **/temp/*
-.vscode
-delbin.bat
+.vs/BlazorCrud/**
 
 # User-specific files
 *.suo

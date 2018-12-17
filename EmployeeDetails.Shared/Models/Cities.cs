@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace EmployeeDetails.App.Models
+namespace EmployeeDetails.Shared.Models
 {
   public class Cities
   {

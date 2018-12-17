@@ -1,11 +1,11 @@
-﻿using EmployeeDetails.App.Models;
+﻿using EmployeeDetails.Shared.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace EmployeeDetails.App.DataAccess
+namespace EmployeeDetails.Shared.DataAccess
 {
   public class EmployeeContext : DbContext
   {

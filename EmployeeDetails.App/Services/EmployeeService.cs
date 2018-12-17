@@ -1,5 +1,5 @@
-﻿using EmployeeDetails.App.DataAccess;
-using EmployeeDetails.App.Models;
+﻿using EmployeeDetails.Shared.DataAccess;
+using EmployeeDetails.Shared.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;

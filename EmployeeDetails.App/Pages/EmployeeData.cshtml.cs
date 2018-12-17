@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using EmployeeDetails.App.Models;
+using EmployeeDetails.Shared.Models;
 
 namespace EmployeeDetails.App.Pages
 {

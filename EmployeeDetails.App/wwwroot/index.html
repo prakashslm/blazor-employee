@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -9,8 +9,79 @@
     <link href="css/site.css" rel="stylesheet" />
 </head>
 <body>
-    <app>Loading...</app>
+  <!--<app><div class="loading"></div></app>-->
+  <app>Loading...</app>
+  <!--<div class="loading"></div>-->
 
-    <script src="_framework/blazor.server.js"></script>
+  <!--<script type="text/javascript" src="js/jquery-3.3.1.slim.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>-->
+  <script src="_framework/blazor.server.js"></script>
+  <!--<script>
+    window.getFromLocal = (key) => {
+      return localStorage[key];
+    };
+
+    window.storeInLocal = (key, data) => {
+      localStorage[key] = data;
+      return true;
+    };
+
+    window.saveToFile = (content) => {
+      var file = new File(content, 'do-' + new Date().toISOString() + '.txt', {
+        type: "text/plain;charset=utf-8"
+      });
+      saveAs(file);
+      return true;
+    };
+
+    window.getFromLocal = (key) => {
+      return localStorage[key];
+    };
+
+    window.focusOnInputField = () => {
+      document.getElementById("taskTextArea").focus();
+      return true;
+    };
+
+    window.setCursorOnBeginningOfInputField = () => {
+      document.getElementById("taskTextArea").setSelectionRange(0, 0);
+      return true;
+    };
+
+    window.setPageTitle = (title) => {
+      document.title = title;
+      return true;
+    };
+
+    window.looseFocus = () => {
+      document.activeElement.blur();
+      return true;
+    };
+
+    window.addEventListeners = async (componentObjectRef) => {
+      document.getElementById('import-button').addEventListener('change', async function () {
+        let file = this.children[0].files[0];
+        let reader = new FileReader();
+        reader.onloadend = async function callback(e) {
+          await componentObjectRef.invokeMethodAsync('Import', e.target.result);
+        };
+        reader.readAsText(file);
+      });
+
+      document.getElementById("taskTextArea").addEventListener("keyup", function (event) {
+        event.preventDefault();
+        if (event.keyCode === 13) {
+          document.getElementById("addItemButton").click();
+        }
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      return true;
+    };
+  </script>-->
 </body>
 </html>

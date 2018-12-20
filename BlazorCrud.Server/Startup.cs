@@ -34,7 +34,7 @@ namespace BlazorCrud.Server
       {
         app.UseDeveloperExceptionPage();
       }
-
+      app.UseMiddleware(typeof(ErrorHandlingMiddleware));
       app.UseMvc(routes =>
       {
         routes.MapRoute(name: "default", template: "{controller}/{action}/{id?}");

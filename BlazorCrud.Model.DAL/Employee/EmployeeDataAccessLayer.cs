@@ -10,6 +10,7 @@ namespace BlazorCrud.Server.DataAccess
     {
         EmployeeContext db = new EmployeeContext();
 
+
         //To get all employee details
         public IEnumerable<Employee> GetAllEmployee()
         {

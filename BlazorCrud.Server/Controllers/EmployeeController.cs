@@ -10,6 +10,7 @@ namespace BlazorCrud.Server.Controllers
   {
     EmployeeDataAccessLayer objemployee = new EmployeeDataAccessLayer();
 
+
     [HttpGet]
     public IEnumerable<Employee> Index()
     {
